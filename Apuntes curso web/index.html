@@ -1,0 +1,284 @@
+<!-- always save it as something.html -->
+
+<!DOCTYPE html>
+<!-- It should always start with this, because it tells the browser wich version of html uses (html5) 
+HTML5 introduces more descriptive HTML tags. 
+These include main, header, footer, nav, video, article, section and others.
+These tags give a descriptive structure to your HTML, make your HTML easier to read, 
+and help with Search Engine Optimization (SEO) and accessibility. 
+The main HTML5 tag helps search engines and other developers find the main content of your page. -->
+<html>
+<!-- all the code must be inside the tag html-->
+
+<head>
+    <!-- the head is used for titles, or meta information, external css or javascript, things not visible for the user -->
+    <title>TITLE
+        <!-- for making the title on the tag of the browser -->
+    </title>
+</head>
+
+<body>
+    <!-- here goes everything that's visible in the browser -->
+    <h1>LOREM IPSUM TITLE</h1>
+    <!-- the h1 is a header, there are 6 types. Is VERY important for the SEO -->
+    <h2>Paragraphs</h2>
+    <p>
+        <!-- Every paragraph goes betwwen this tags. Each paragraph should go on separate tags-->
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+        in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
+    </p>
+
+    <p>
+        <!-- This is another paragraph -->
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, <br />
+        <!-- the br adds a break. It doesn't have open and close tags -->
+        <b>
+                <!-- the b turns the text in bold -->
+                sed do eiusmod tempor incididunt ut labore et dolore magna
+                aliqua. Ut
+                enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                nisi ut
+                aliquip ex ea commodo consequat. Duis aute irure dolor in
+                reprehenderit
+                in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                Excepteur sint occaecat cupidatat non proident, sunt in culpa
+                qui
+                officia deserunt mollit anim id est laborum
+            </b>
+        <!-- Another way of doing this is using the <strong> tag -->
+        <!-- For making italic text the tag is: <i></i>   or  <em></em>  (the em is preferable for accessibility) -->
+    </p>
+
+    <h2>Unordered Lists</h2>
+    <ul>
+        <!-- the ul tag is for making unordered lists. This are followed by any number of elements usin the <li> tag -->
+        <li>An item</li>
+        <li>Another item</li>
+        <li>And one more item</li>
+    </ul>
+
+    <h2>Ordered Lists</h2>
+    <!-- Ordered Lists are the same, they just add an enumerating order-->
+    <ol>
+        <li>An item</li>
+        <li>Another item</li>
+        <li>And one more item</li>
+    </ol>
+
+    <h2>Images</h2>
+    <!-- You can add images to your website by using the img tag,
+        and point to a specific image's URL using the src attribute.
+        The img tag doesn't have a closing tag -->
+    <img src="https://image.shutterstock.com/image-photo/british-shorthair-kitten-silver-color-600w-1510641710.jpg" />
+    <!-- The img can be located in a url address (absolute linking) or near the .html document (relative linking).
+    All img must have an alt attribute. 
+    The text inside an alt attribute is used for screen readers to improve accessibility 
+    and is displayed if the image fails to load.
+    Note: If the image is purely decorative, using an empty alt attribute is a best practice.
+    Ideally the alt attribute should not contain special characters unless needed.
+    An img can have different attributes like the width -->
+    <br />
+    <img src="images/kitty.jpg" alt="Beautifiul Kitty playing" width="250" />
+
+    <h2>Hyperlinking</h2>
+    <!--   It uses an <a> (anchor) tag and then an href attribute to linking to another site.          
+            Can also be used to create internal links to jump to different sections within a webpage.
+            To create an internal link, you assign a link's href attribute to a hash symbol # 
+            plus the value of the id attribute for the element that you want to internally link to, 
+            usually further down the page. You then need to add the same id attribute to the 
+            element you are linking to. An id is an attribute that uniquely describes an element.-->
+    <a href="contact.html">Click here for contact</a>
+    <!-- This will lead to another html in my directory of web pages I'm writing, maybe a contact page -->
+    <br />
+
+    <a href="#bio">About me</a>
+    <!-- This will lead to the header that has the id bio below-->
+    <h3 id="bio">About me</h3>
+
+    <a href="https://google.com" target="blank">Search in google</a>
+    <!-- In this examples the linking replaced the page in wich I was, but if I want to link to a new page I have to add the target attribute and set it to "blank"-->
+    <br />
+
+    <p>
+        <!-- anchor nested to a pragraph -->
+        Here's a link to
+        <a href="https://google.com" target="blank"> google</a> for you to do a search.
+    </p>
+
+    <a href="mailto:micaela.vazzana@gmail.com" target="blank">Write me</a>
+    <!--This will open the mailing app and adress it to that mail. The mailto attribute does this-->
+    <br />
+
+    <a href="images/kitty.jpg" target="blank">Download this file</a>
+    <!--This will link to a file in my website for downloading it (for example) -->
+    <br />
+
+    <!-- Dead Links:
+    Sometimes you want to add a elements to your website before you know where they will link.
+    Replace the href attribute value with a # -->
+    <a href="#" target="blank">Cat photos</a>
+    <br />
+
+    <h2>Audios and Videos</h2>
+    <!-- HTML5 has the possibility of inserting audio and videos through their own tags-->
+    <audio controls>
+            <source src="audio & videos/12 - Mala.mp3" />
+        </audio>
+
+    <br />
+
+    <video controls width="640" height="360">
+            <source src="audio & videos/sistema de zonas.mp4" />
+        </video>
+    <!-- The controls attribute is important for controlling to play or pause the audio or video. 
+        There are different atributes for this, they are able to see in this website:
+         AUDIO: https://www.w3schools.com/tags/tag_audio.asp 
+         VIDEO: https://www.w3schools.com/tags/tag_video.asp 
+         ASPECT RATIO 16:9: https://aspectratiocalculator.com/16-9.html -->
+    <br />
+    <!-- For inserting embebed code from youtube, just copy and paste that embed code and paste it anywhere-->
+    <iframe width="640" height="360" src="https://www.youtube.com/embed/uNulhfvsY2I" title="YouTube video
+            player" frameborder="0" allow="accelerometer; autoplay; clipboard-write;
+            encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+    <h2>Tables</h2>
+    <!-- The tag it's called table, it has a closing tag.
+        It must containg a tbody tag and inside that body we can define the columns and rows.
+        It's best to do this with css rather html-->
+    <table width="350" border="1">
+        <tbody>
+            <tr>
+                <!-- TR defines a Row (table row)-->
+                <td>1</td>
+                <!-- TD defines a Data Cell (table data cell)-->
+                <td>2</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>4</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h2>IFRAMES</h2>
+
+    <!--
+       An iframe is a HTML document that is embedded within another HTML document on a Web site.
+       That is, you can use iframe to insert certain content from another source into a Web page.
+       This is how we emmbebed the youtube video before
+    -->
+    <iframe height="280" width="500" src="https://www.youtube.com/embed/kfM-yu0iQBk" frameborder="0" scrolling="auto" allow="accelerometer; autoplay; clipboard-write; encrypted-media;
+            gyroscope; picture-in-picture" allowfullscreen>
+        </iframe>
+
+    <h2>FORMS</h2>
+    <!--
+        It's possible to build web forms that actually submit data to a server.
+        This forms rely on a "server side scripting".
+        This means that it's neccesary to use something like php or asp to process the form.
+        The form goes between the tags "form".
+        There are text fields and text areas that are defined by inputs.
+    -->
+    <h3>INPUTS</h3>
+    <!--
+        Input elements are a convenient way to get input from your user.
+        You can create a text input like this:
+    -->
+    <form>
+        <input type="text" />
+    </form>
+
+    <!--
+        Note that input elements are self-closing.
+        Placeholder text is what is displayed in your input element before your user has 
+        inputted anything.
+        You can create placeholder text like so:
+    -->
+    <form>
+        <input type="text" placeholder="this is placeholder text" />
+    </form>
+    <!--
+        Text areas are for more extended information input. They work like this:
+    -->
+    <form>
+        <br/>
+        <textarea>
+                Add your message here.
+            </textarea>
+        <br/>
+    </form>
+
+    <h4>Checkboxes</h4>
+
+    <!--
+        Checkboxes are a type of input
+        Each of your checkboxes can be nested within its own label element. By wrapping an input element inside 
+        of a label element it will automatically associate the checkbox input with the label element surrounding it
+        All related checkbox inputs should have the same name attribute.
+    -->
+    <form>
+        <label>
+            <input type="checkbox" name="sameNameAttribute" value=coffee id="elementOne"/>coffee
+        </label><br/>
+        <label>
+            <input type="checkbox" name="sameNameAttribute" value=tea id="elementTwo"/>tea
+        </label><br/>
+        <label>
+            <input type="checkbox" name="sameNameAttribute" value=mate id="elementThree"/>mate
+        </label><br/>
+    </form>
+
+    <h4>Radio Buttons</h4>
+
+    <!--
+        Radio Buttons are another type of input. They work in a similar way to checkboxes.
+        The big difference is that by creating a radio group, selecting any single radio button
+        will automatically deselect the other buttons within the same group ensuring only one answer
+        is provided by the user.
+    -->
+
+    <form>
+        <label> 
+                <input type="radio" name="sameNameAttributeRadio" value="yes" id="element1"> yes
+            </label><br/>
+        <label> 
+                <input type="radio" name="sameNameAttributeRadio" value="no" id="element2"> no
+            </label><br/>
+    </form>
+
+
+
+
+    <!--
+Add a Submit Button to a Form:
+
+Clicking this button will send the data from your form to the URL you specified with your form's 
+action attribute.
+EJEMPLO: <button type="submit ">this button submits the form</button>
+
+You can require specific form fields so that your user will not be able to submit your form 
+until he or she has filled them out.
+For example, if you wanted to make a text input field required, you can just add the attribute required 
+within your input element, like this: <input type="text " required>
+
+
+
+When a form gets submitted, the data is sent to the server and includes entries for the options selected. 
+Inputs of type radio and checkbox report their values from the value attribute.
+
+EJEMPLO: 
+<label for="outdoor ">
+  <input id="outdoor " value="outdoor " type="radio " name="indoor-outdoor ">Outdoor
+</label>
+
+
+//To send the input to a specific web, you can do this by specifying an action attribute on your form element.
+    <form action="https://url-where-you-want-to-submit-form-data ">
+        <input type="text " placeholder="this is placeholder text ">
+    </form>
+
+
+-->
+</body>
+
+</html>

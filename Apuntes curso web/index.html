@@ -1,5 +1,3 @@
-<!-- always save it as something.html -->
-
 <!DOCTYPE html>
 <!-- It should always start with this, because it tells the browser wich version of html uses (html5) 
 HTML5 introduces more descriptive HTML tags. 
@@ -246,39 +244,59 @@ The main HTML5 tag helps search engines and other developers find the main conte
             </label><br/>
     </form>
 
-
-
-
+    <h4>Submit button</h4>
     <!--
-Add a Submit Button to a Form:
+        Clicking this button will send the data from your form to the URL you specified with your form's 
+        action attribute.
+        You can require specific form fields so that your user will not be able to submit your form 
+        until he or she has filled them out.
+        For example, if you wanted to make a text input field required, you can just add the attribute required 
+        within your input element, like this: <input type="text " required>
+        When a form gets submitted, the data is sent to the server and includes entries for the options selected. 
+        Inputs of type radio and checkbox report their values from the value attribute.
+    -->
 
-Clicking this button will send the data from your form to the URL you specified with your form's 
-action attribute.
-EJEMPLO: <button type="submit ">this button submits the form</button>
-
-You can require specific form fields so that your user will not be able to submit your form 
-until he or she has filled them out.
-For example, if you wanted to make a text input field required, you can just add the attribute required 
-within your input element, like this: <input type="text " required>
-
-
-
-When a form gets submitted, the data is sent to the server and includes entries for the options selected. 
-Inputs of type radio and checkbox report their values from the value attribute.
-
-EJEMPLO: 
-<label for="outdoor ">
-  <input id="outdoor " value="outdoor " type="radio " name="indoor-outdoor ">Outdoor
-</label>
-
-
-//To send the input to a specific web, you can do this by specifying an action attribute on your form element.
-    <form action="https://url-where-you-want-to-submit-form-data ">
-        <input type="text " placeholder="this is placeholder text ">
+    <form>
+        <button type="submit ">this button submits the form</button>
     </form>
 
+    <!--
+        To send the input to a specific web, you can do this by specifying an action attribute on your form element.
+    -->
+    <form action="https://url-where-you-want-to-submit-form-data ">
+        <input type="text" placeholder="input data here">
+        <button type="submit">SEND DATA</button>
+    </form>
 
--->
+    <h2>FILE STRUCTURE & FILE NAME</h2>
+
+    <!-- 
+        -> ALWAYS name the home page as index.html / That's what the browser looks for to know wich file is the home 
+        -> EVERY FILE should be in lowercase.
+        -> DO NOT name the files with spaces, it's recommended to use a dash (-) (best practice) so the SEO can read it better.
+        It interpretates the words separately and not as a single word. 
+    -->
+    <h2>METATAGS</h2>
+    <!--
+        A metatag tells the browser what the website is about.
+        It goes at the begining of the web so the search engines generate results. (under the title tag)
+        It uses the tag "meta" and includes a small description about the site in the "content" attribute.
+    -->
+    <meta name = "Description" content="Notes for Web Development Course">
+    <!--
+        Another type of metatag is "keywords", is not longer used but is better to have it for best practice.
+        In this case it's not a description, but single words as keywords.
+    -->
+    <meta name = "Keywords" content="notes, course, web">
+    <!--
+        There's also another types of meta or attributes. Examples:
+    
+        <meta charset="UTF-8">
+        <meta name="author" content="John Doe">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        There is more information at: https://www.w3schools.com/tags/tag_meta.asp
+    -->
+
 </body>
 
 </html>
